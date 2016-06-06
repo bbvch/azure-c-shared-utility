@@ -449,7 +449,7 @@ IF(WIN32)
 ENDIF(WIN32)
 
 #this is the product (a library)
-add_library(aziotsharedutil ${source_c_files} ${source_h_files})
+add_library(aziotsharedutil SHARED ${source_c_files} ${source_h_files})
 
 if(${use_http})
     if(WIN32)
