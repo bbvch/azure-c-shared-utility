@@ -459,7 +459,7 @@ if(${use_http})
             target_link_libraries(aziotsharedutil winhttp.lib)
         endif()
     else()
-        target_link_libraries(aziotsharedutil curl)
+        target_link_libraries(aziotsharedutil curl uuid)
     endif()
 endif()
 
